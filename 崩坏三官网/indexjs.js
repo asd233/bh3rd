@@ -1,4 +1,4 @@
-//新闻列表
+//新闻列表切换开始
 var new1 = document.getElementById("new");
 var news = document.getElementById("news");
 var gg = document.getElementById("gg");
@@ -73,7 +73,15 @@ function gl_show() {
     ul4.className = "bottom-bg-news-ul-hide";
     ul5.className = "bottom-bg-news-ul-show";
 }
-//轮播窗
+//新闻列表切换开始
+
+//网页弹窗开始
+function windown(){
+    var windown = document.getElementById("windown");
+    windown.className="alertwindow-none";
+}
+//网页弹窗结束
+//轮播窗开始
 
 var angel = document.getElementById("angel");
 var zmb = document.getElementById("zmb");
@@ -84,7 +92,8 @@ var zmb_dian = document.getElementById("zmb_dian");
 var smzc_dian = document.getElementById("smzc_dian");
 
 var angel_left_value = angel.style.left;
-
+//动画过渡效果开始
+//判断当前位置和目标位置的大小关系
 function lbt(eleid, left_value, left_num) {
     var ele = document.getElementById(eleid);
     var timezmb1 = setInterval(function () {
@@ -99,15 +108,16 @@ function lbt(eleid, left_value, left_num) {
         }
     }, 1)
 }
-
+//动画过渡效果结束
+//图片切换开始
 function zmb1() {
-        lbt("angel", "-474px", 3);
-        lbt("zmb", "0px", 3);
-        lbt("smzc", "474px", 3)
-        angel_dian.setAttribute("class", "");
-        zmb_dian.setAttribute("class", "on");
-        smzc_dian.setAttribute("class", "");
-    };
+    lbt("angel", "-474px", 3);
+    lbt("zmb", "0px", 3);
+    lbt("smzc", "474px", 3)
+    angel_dian.setAttribute("class", "");
+    zmb_dian.setAttribute("class", "on");
+    smzc_dian.setAttribute("class", "");
+};
 
 function smzc1() {
     lbt("angel", "-948px", 3);
@@ -126,7 +136,8 @@ function angel1() {
     zmb_dian.setAttribute("class", "");
     smzc_dian.setAttribute("class", "");
 }
-
+//图片切换结束
+//图片切换判断开始
 function lbc() {
     var angel_value = angel.style.left;
     if (angel_value == "0px") {
@@ -139,4 +150,6 @@ function lbc() {
         angel1();
     }
 }
+//图片切换结束结束
 setInterval("lbc()", 3000);
+//图片轮播窗结束
