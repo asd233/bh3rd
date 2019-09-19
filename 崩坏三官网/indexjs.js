@@ -76,9 +76,9 @@ function gl_show() {
 //新闻列表切换开始
 
 //网页弹窗开始
-function windown(){
+function windown() {
     var windown = document.getElementById("windown");
-    windown.className="alertwindow-none";
+    windown.className = "alertwindow-none";
 }
 //网页弹窗结束
 //轮播窗开始
@@ -95,9 +95,13 @@ var angel_left_value = angel.style.left;
 //动画过渡效果开始
 //判断当前位置和目标位置的大小关系
 function lbt(eleid, left_value, left_num) {
-    var ele = document.getElementById(eleid);
-    var timezmb1 = setInterval(function () {
-        var ele_value = ele.style.left;
+    var ele = document.getElementById(eleid);  //获取要移动的元素
+    var ele_value = ele.style.left;        //获取元素的left值
+    if(parseInt(ele_value) < parseInt(left_value) &&left_num != -6){            //如果当前位置小于目标位置
+        left_num = -left_num;
+    }
+    var timezmb1 = setInterval(function () {   //间隔一秒移动一次
+        var ele_value = ele.style.left;        //获取元素的left值
         if (ele_value == left_value) {
             clearInterval(timezmb1);
         }
@@ -105,12 +109,12 @@ function lbt(eleid, left_value, left_num) {
             var ele_num = parseInt(ele_value, 10);
             ele_num = ele_num - left_num;
             ele.style.left = ele_num + "px";
-        }
+        };
     }, 1)
-}
+};
 //动画过渡效果结束
 //图片切换开始
-function zmb1() {
+function zmb1() {//第二张图片
     lbt("angel", "-474px", 3);
     lbt("zmb", "0px", 3);
     lbt("smzc", "474px", 3)
@@ -119,7 +123,7 @@ function zmb1() {
     smzc_dian.setAttribute("class", "");
 };
 
-function smzc1() {
+function smzc1() {//第三张图片
     lbt("angel", "-948px", 3);
     lbt("zmb", "-474px", 3);
     lbt("smzc", "0px", 3);
@@ -128,7 +132,7 @@ function smzc1() {
     smzc_dian.setAttribute("class", "on");
 }
 
-function angel1() {
+function angel1() {//第一张图片
     lbt("angel", "0px", -6);
     lbt("zmb", "474px", -6);
     lbt("smzc", "948px", -6);

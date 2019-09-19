@@ -558,12 +558,14 @@ text {
 .bottom-bg-news-ul-show {
   display: block;
 
+  margin-top: 1px;
   margin-left: 5px;
 }
 
 .bottom-bg-news-ul-hide {
   display: none;
 
+  margin-top: 1px;
   margin-left: 5px;
 }
 
@@ -636,40 +638,44 @@ text {
   background: url(./image/PC_bt.jpg);
 }
 
-.alertwindow-none{
+.alertwindow-none {
   display: none;
 }
 
 .download {
-  margin: 0 auto;
   width: 1010px;
   height: 100%;
+  margin: 0 auto;
   margin-top: 60px;
 }
 
 .alertwindow-Qrcode {
   font-size: 20px;
 
+  float: left;
+
   width: 252px;
   height: 292px;
+
   text-align: center;
-  float: left;
+
   color: #999;
   background-color: #fff;
 }
 
-.download-link{
+.download-link {
+  float: left;
+
   width: 213px;
   height: 300px;
-  float: left;
   margin-left: 30px;
 }
 
-.download-link div{
+.download-link div {
   margin-top: 5px;
 }
 
-.close{
+.close {
   position: absolute;
   top: 5px;
   right: 400px;
