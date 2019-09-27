@@ -97,7 +97,7 @@ var angel_left_value = angel.style.left;
 function lbt(eleid, left_value, left_num) {
     var ele = document.getElementById(eleid);  //获取要移动的元素
     var ele_value = ele.style.left;        //获取元素的left值
-    if(parseInt(ele_value) < parseInt(left_value) &&left_num != -6){            //如果当前位置小于目标位置
+    if (parseInt(ele_value) < parseInt(left_value) && left_num != -6) {            //如果当前位置小于目标位置
         left_num = -left_num;
     }
     var timezmb1 = setInterval(function () {   //间隔一秒移动一次
@@ -153,7 +153,14 @@ function lbc() {
     else if (angel_value == "-948px") {
         angel1();
     }
+    else {
+        angel.style.left = "0px";
+        zmb.style.left = "474px";
+        smzc.style.left = "948px";
+
+    }
 }
 //图片切换结束结束
 setInterval("lbc()", 3000);
+var img_qiehuan = setInterval("lbc()", 3000);
 //图片轮播窗结束
