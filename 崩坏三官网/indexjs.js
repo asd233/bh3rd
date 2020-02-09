@@ -73,7 +73,7 @@ function gl_show() {
     ul4.className = "bottom-bg-news-ul-hide";
     ul5.className = "bottom-bg-news-ul-show";
 }
-//新闻列表切换开始
+//新闻列表切换结束
 
 //网页弹窗开始
 function windown() {
@@ -94,8 +94,8 @@ var smzc_dian = document.getElementById("smzc_dian");
 var angel_left_value = angel.style.left;
 //动画过渡效果开始
 //判断当前位置和目标位置的大小关系
-function lbt(eleid, left_value, left_num) {
-    var ele = document.getElementById(eleid);  //获取要移动的元素
+function lbt(left_value, left_num) {
+    var ele = document.getElementById("lbcwindow");  //获取要移动的元素
     var ele_value = ele.style.left;        //获取元素的left值
     if (parseInt(ele_value) < parseInt(left_value) && left_num != -6) {            //如果当前位置小于目标位置
         left_num = -left_num;
@@ -115,27 +115,21 @@ function lbt(eleid, left_value, left_num) {
 //动画过渡效果结束
 //图片切换开始
 function zmb1() {//第二张图片
-    lbt("angel", "-474px", 3);
-    lbt("zmb", "0px", 3);
-    lbt("smzc", "474px", 3)
+    lbt("-474px", 3);
     angel_dian.setAttribute("class", "");
     zmb_dian.setAttribute("class", "on");
     smzc_dian.setAttribute("class", "");
 };
 
 function smzc1() {//第三张图片
-    lbt("angel", "-948px", 3);
-    lbt("zmb", "-474px", 3);
-    lbt("smzc", "0px", 3);
+    lbt("-948px", 3);
     angel_dian.setAttribute("class", "");
     zmb_dian.setAttribute("class", "");
     smzc_dian.setAttribute("class", "on");
 }
 
 function angel1() {//第一张图片
-    lbt("angel", "0px", -6);
-    lbt("zmb", "474px", -6);
-    lbt("smzc", "948px", -6);
+    lbt("0px", -6);
     angel_dian.setAttribute("class", "on");
     zmb_dian.setAttribute("class", "");
     smzc_dian.setAttribute("class", "");
@@ -143,15 +137,22 @@ function angel1() {//第一张图片
 //图片切换结束
 //图片切换判断开始
 function lbc() {
-    var angel_value = angel.style.left;
-    if (angel_value == "0px") {
+    var ele = document.getElementById("lbcwindow");  //获取要移动的元素
+    var ele_value = ele.style.left;        //获取元素的left值
+    if (ele_value == "0px") {
+        clearInterval(img_qiehuan);
         zmb1();
+        img_qiehuan = setInterval("lbc()", 3000);
     }
-    else if (angel_value == "-474px") {
+    else if (ele_value == "-474px") {
+        clearInterval(img_qiehuan);
         smzc1();
+        img_qiehuan = setInterval("lbc()", 3000);
     }
-    else if (angel_value == "-948px") {
+    else if (ele_value == "-948px") {
+        clearInterval(img_qiehuan);
         angel1();
+        img_qiehuan = setInterval("lbc()", 3000);
     }
     else {
         angel.style.left = "0px";
@@ -161,6 +162,14 @@ function lbc() {
     }
 }
 //图片切换结束结束
-setInterval("lbc()", 3000);
+var win = document.getElementById("lbcwindow").parentElement;
+//鼠标停留在图片上时停止切换效果开始
+win.onmousemove = function () {
+    clearInterval(img_qiehuan);
+}
+win.onmouseout = function () {
+    img_qiehuan = setInterval("lbc()", 3000);
+}
+//鼠标停留在图片上时停止切换效果结束
 var img_qiehuan = setInterval("lbc()", 3000);
 //图片轮播窗结束
