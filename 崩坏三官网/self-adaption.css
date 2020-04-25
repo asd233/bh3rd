@@ -1,0 +1,129 @@
+/*根据屏幕像素自适应代码*/
+@media screen and (max-width: 2560px) {
+  #sky {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 2560px;
+    height: 1000px;
+  }
+}
+
+@media screen and (max-width: 1920px) {
+  #sky {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 1920px;
+    height: 1000px;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  #sky {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 1600px;
+    height: 1000px;
+  }
+
+  .Valkyrie-role {
+    width: 720px;
+    height: 1750px;
+    margin: 0 auto;
+  }
+
+  .Valkyrie-role-div-liliya {
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-left: 85px;
+  }
+
+  .Valkyrie-role-div-bronya-c7 {
+    margin-top: 5px;
+    margin-left: 5px;
+  }
+
+  .Valkyrie-video-div video {
+    left: -45%;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  #sky {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 1366px;
+    height: 1000px;
+  }
+
+  .Valkyrie-role {
+    width: 720px;
+    height: 1750px;
+    margin: 0 auto;
+  }
+
+  .Valkyrie-role-div-liliya {
+    margin-left: 80px;
+  }
+
+  .Valkyrie-role-div-bronya-c7 {
+    margin-top: 5px;
+    margin-left: 5px;
+  }
+
+  .bottom-bg {
+    width: 100%;
+    height: 665px;
+
+    background: url(./image/section_2_bg.jpg) no-repeat;
+    background-position: center;
+    background-size: auto 100%;
+  }
+}
+
+@media screen and (max-width: 1365px) {
+  #sky {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 1000px;
+  }
+
+  .Valkyrie-role {
+    width: 490px;
+    height: 2400px;
+    margin: 0 auto;
+  }
+
+  .Valkyrie-role-div-liliya {
+    margin-left: 5px;
+  }
+
+  .Valkyrie-role-div-bronya-c7 {
+    margin-top: 5px;
+    margin-left: 150px;
+  }
+
+  .Valkyrie-video-left {
+    float: left;
+
+    width: 230px;
+    height: 270px;
+  }
+
+  .Valkyrie-video-rigth {
+    float: right;
+
+    width: 230px;
+    height: 270px;
+  }
+}

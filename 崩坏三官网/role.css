@@ -1,0 +1,274 @@
+/* 女武神列表样式 */
+.role {
+  position: relative;
+  left: -10%;
+
+  width: 120%;
+  height: 140px;
+
+  transform: skew(10deg);
+}
+
+#kiana-c1 {
+  background: url(./image/valkyrie/kiana_c1.png) no-repeat;
+  background-position: center;
+  background-size: auto 100%;
+}
+
+#kiana-c2 {
+  background: url(./image/valkyrie/kiana_c2.png) no-repeat;
+  background-position: center;
+  background-size: auto 100%;
+}
+
+#kiana-c3 {
+  background: url(./image/valkyrie/kiana_c3.png) no-repeat;
+  background-position: center;
+  background-size: auto 100%;
+}
+
+#kiana-c4 {
+  background: url(./image/valkyrie/kiana_c4.png) no-repeat;
+  background-position: center;
+  background-size: auto 100%;
+}
+
+#kiana-c5 {
+  background: url(./image/valkyrie/kiana_c5.png) no-repeat;
+  background-position: center;
+  background-size: auto 100%;
+}
+
+#mei-c1 {
+  background: url(./image/valkyrie/mei_c1.png) no-repeat;
+  background-position: center;
+  background-size: auto 100%;
+}
+
+#mei-c2 {
+  background: url(./image/valkyrie/mei_c2.png) no-repeat;
+  background-position: center;
+  background-size: auto 100%;
+}
+
+#mei-c3 {
+  background: url(./image/valkyrie/mei_c3.png) no-repeat;
+  background-position: center;
+  background-size: auto 100%;
+}
+
+#mei-c4 {
+  background: url(./image/valkyrie/mei_c4.png) no-repeat;
+  background-position: center;
+  background-size: auto 100%;
+}
+
+#bronya-c1 {
+  background: url(./image/valkyrie/bronya_c1.png) no-repeat;
+  background-position: center;
+  background-size: auto 100%;
+}
+
+#bronya-c2 {
+  background: url(./image/valkyrie/bronya_c2.png) no-repeat;
+  background-position: center;
+  background-size: auto 100%;
+}
+
+#bronya-c3 {
+  background: url(./image/valkyrie/bronya_c3.png) no-repeat;
+  background-position: center;
+  background-size: auto 100%;
+}
+
+#bronya-c4 {
+  background: url(./image/valkyrie/bronya_c4.png) no-repeat;
+  background-position: center;
+  background-size: auto 100%;
+}
+
+#himeko-c1 {
+  background: url(./image/valkyrie/himeko_c1.png) no-repeat;
+  background-position: center;
+  background-size: auto 100%;
+}
+
+#himeko-c2 {
+  background: url(./image/valkyrie/himeko_c2.png) no-repeat;
+  background-position: center;
+  background-size: auto 100%;
+}
+
+#himeko-c3 {
+  background: url(./image/valkyrie/himeko_c3.png) no-repeat;
+  background-position: center;
+  background-size: auto 100%;
+}
+
+#himeko-c4 {
+  background: url(./image/valkyrie/himeko_c4.png) no-repeat;
+  background-position: center;
+  background-size: auto 100%;
+}
+
+#sakura-c1 {
+  background: url(./image/valkyrie/sakura_c1.png) no-repeat;
+  background-position: center;
+  background-size: auto 100%;
+}
+
+#sakura-c2 {
+  background: url(./image/valkyrie/sakura_c2.png) no-repeat;
+  background-position: center;
+  background-size: auto 100%;
+}
+
+#sakura-c3 {
+  background: url(./image/valkyrie/sakura_c3.png) no-repeat;
+  background-position: center;
+  background-size: auto 100%;
+}
+
+#theresa-c1 {
+  background: url(./image/valkyrie/theresa_c1.png) no-repeat;
+  background-position: center;
+  background-size: auto 100%;
+}
+
+#theresa-c2 {
+  background: url(./image/valkyrie/theresa_c2.png) no-repeat;
+  background-position: center;
+  background-size: auto 100%;
+}
+
+#theresa-c3 {
+  background: url(./image/valkyrie/theresa_c3.png) no-repeat;
+  background-position: center;
+  background-size: auto 100%;
+}
+
+#theresa-c4 {
+  background: url(./image/valkyrie/theresa_c4.png) no-repeat;
+  background-position: center;
+  background-size: auto 100%;
+}
+
+#bronya-c5 {
+  background: url(./image/valkyrie/bronya_c5.png) no-repeat;
+  background-position: center;
+  background-size: auto 100%;
+}
+
+#bronya-c6 {
+  background: url(./image/valkyrie/bronya_c6.png) no-repeat;
+  background-position: center;
+  background-size: auto 100%;
+}
+
+#kallen-c1 {
+  background: url(./image/valkyrie/kallen_c1.png) no-repeat;
+  background-position: center;
+  background-size: auto 100%;
+}
+
+#fuka-c1 {
+  background: url(./image/valkyrie/fuka_c1.png) no-repeat;
+  background-position: center;
+  background-size: auto 100%;
+}
+
+#fuka-c2 {
+  background: url(./image/valkyrie/fuka_c2.png) no-repeat;
+  background-position: center;
+  background-size: auto 100%;
+}
+
+#fuka-c3 {
+  background: url(./image/valkyrie/fuka_c3.png) no-repeat;
+  background-position: center;
+  background-size: auto 100%;
+}
+
+#fuka-c4 {
+  background: url(./image/valkyrie/fuka_c4.png) no-repeat;
+  background-position: center;
+  background-size: auto 100%;
+}
+
+#kallen-c2 {
+  background: url(./image/valkyrie/kallen_c2.png) no-repeat;
+  background-position: center;
+  background-size: auto 100%;
+}
+
+#theresa-c5 {
+  background: url(./image/valkyrie/theresa_c5.png) no-repeat;
+  background-position: center;
+  background-size: auto 100%;
+}
+
+#himeko-c5 {
+  background: url(./image/valkyrie/himeko_c5.png) no-repeat;
+  background-position: center;
+  background-size: auto 100%;
+}
+
+#kiana-c5 {
+  background: url(./image/valkyrie/kiana_c5.png) no-repeat;
+  background-position: center;
+  background-size: auto 100%;
+}
+
+#kallen-c3 {
+  background: url(./image/valkyrie/kallen_c3.png) no-repeat;
+  background-position: center;
+  background-size: auto 100%;
+}
+
+#himeko-c6 {
+  background: url(./image/valkyrie/himeko_c6.png) no-repeat;
+  background-position: center;
+  background-size: auto 100%;
+}
+
+#rita-c1 {
+  background: url(./image/valkyrie/rita_c1.png) no-repeat;
+  background-position: center;
+  background-size: auto 100%;
+}
+
+#rita-c2 {
+  background: url(./image/valkyrie/rita_c2.png) no-repeat;
+  background-position: center;
+  background-size: auto 100%;
+}
+
+#rita-c3 {
+  background: url(./image/valkyrie/rita_c3.png) no-repeat;
+  background-position: center;
+  background-size: auto 100%;
+}
+
+#rozaliya-c1 {
+  background: url(./image/valkyrie/rozaliya_c1.png) no-repeat;
+  background-position: center;
+  background-size: auto 100%;
+}
+
+#liliya-c1 {
+  background: url(./image/valkyrie/liliya_c1.png) no-repeat;
+  background-position: center;
+  background-size: auto 100%;
+}
+
+#seele-c1 {
+  background: url(./image/valkyrie/seele_c1.png) no-repeat;
+  background-position: center;
+  background-size: auto 100%;
+}
+
+#bronya-c7 {
+  background: url(./image/valkyrie/bronya_c7.png) no-repeat;
+  background-position: center;
+  background-size: auto 100%;
+}
