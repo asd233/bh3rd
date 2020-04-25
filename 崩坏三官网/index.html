@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>《崩坏3》官方网站 - 为世界上所有的美好而战</title>
     <link href="./indexcss.css" rel="stylesheet" type="text/css">
+    <link href="./self-adaption.css" rel="stylesheet" type="text/css">
+    <link href="./role.css" rel="stylesheet" type="text/css">
     <link rel="icon" href="./image/favicon.ico" type="image/x-icon">
 </head>
 
@@ -340,7 +342,7 @@
                 <div class="bottom-bg-news">
                     <!--轮播图-->
                     <div class="bottom-bg-news-img">
-                        <div id="lbcwindow" style="left: 0px">
+                        <div id="lbcwindow" style="transform: translate(0px);">
                             <span id="angel" style="left: 0px"><a href="#"><img
                                         src="./image/轮播图/Angel Restructure.jpeg" /></a></span>
                             <span id="zmb" style="left: 474px"><a href="#"><img src="./image/轮播图/zmb.png" /></a></span>
@@ -348,9 +350,9 @@
                                         src="./image/轮播图/smzc.png" /></a></span>
                         </div>
                         <div class="bottom-bg-news-img-dian">
-                            <div class="on" id="angel_dian" onclick="angel1()"></div>
-                            <div class="" id="zmb_dian" onclick="zmb1()"></div>
-                            <div class="" id="smzc_dian" onclick="smzc1()"></div>
+                            <div class="on" id="angel_dian"></div>
+                            <div class="" id="zmb_dian"></div>
+                            <div class="" id="smzc_dian"></div>
                         </div>
                     </div>
                     <!--宣传列表-->
@@ -531,7 +533,7 @@
             </div>
         </div>
     </div>
-    <div class="alertwindow" id="windown">
+    <!-- <div class="alertwindow" id="windown">
         <div class="download">
             <div class="alertwindow-Qrcode">
                 <img src="./image/download_qrcode02.png" width="252px" height="252px">
@@ -550,7 +552,7 @@
                 <a href="javascript:windown() ;"><img src="./image/close-white.png"></a>
             </div>
         </div>
-    </div>
+    </div> -->
     <!--声明-->
     <div class="shengming">
         <div class="shengming-div">
@@ -566,6 +568,7 @@
         </div>
     </div>
     <script type="text/javascript" src="./indexjs.js"></script>
+    <script type="text/javascript" src="./rotationWindow.js"></script>
 </body>
 
 </html>
