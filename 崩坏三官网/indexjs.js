@@ -1,77 +1,22 @@
 //新闻列表切换开始
-var new1 = document.getElementById("new");
-var news = document.getElementById("news");
-var gg = document.getElementById("gg");
-var hd = document.getElementById("hd");
-var gl = document.getElementById("gl");
-var ul1 = document.getElementById("ul1");
-var ul2 = document.getElementById("ul2");
-var ul3 = document.getElementById("ul3");
-var ul4 = document.getElementById("ul4");
-var ul5 = document.getElementById("ul5");
+var ulList = document.querySelectorAll("ul[class|=bottom-bg-news-ul]")
+var newsClass = document.querySelectorAll("li[class|=bottom-bg-news-nav-li]");
+var serialNumber = 0;
+for (let i = 0; i < newsClass.length; i++) {
+    newsClass[i].onclick = new_show;
+}
 function new_show() {
-    new1.className = "bottom-bg-news-nav-li-show";
-    news.className = "bottom-bg-news-nav-li-hide";
-    gg.className = "bottom-bg-news-nav-li-hide";
-    hd.className = "bottom-bg-news-nav-li-hide";
-    gl.className = "bottom-bg-news-nav-li-hide";
-    ul1.className = "bottom-bg-news-ul-show";
-    ul2.className = "bottom-bg-news-ul-hide";
-    ul3.className = "bottom-bg-news-ul-hide";
-    ul4.className = "bottom-bg-news-ul-hide";
-    ul5.className = "bottom-bg-news-ul-hide";
-}
-
-function news_show() {
-    new1.className = "bottom-bg-news-nav-li-hide";
-    news.className = "bottom-bg-news-nav-li-show";
-    gg.className = "bottom-bg-news-nav-li-hide";
-    hd.className = "bottom-bg-news-nav-li-hide";
-    gl.className = "bottom-bg-news-nav-li-hide";
-    ul1.className = "bottom-bg-news-ul-hide";
-    ul2.className = "bottom-bg-news-ul-show";
-    ul3.className = "bottom-bg-news-ul-hide";
-    ul4.className = "bottom-bg-news-ul-hide";
-    ul5.className = "bottom-bg-news-ul-hide";
-}
-
-function gg_show() {
-    new1.className = "bottom-bg-news-nav-li-hide";
-    news.className = "bottom-bg-news-nav-li-hide";
-    gg.className = "bottom-bg-news-nav-li-show";
-    hd.className = "bottom-bg-news-nav-li-hide";
-    gl.className = "bottom-bg-news-nav-li-hide";
-    ul1.className = "bottom-bg-news-ul-hide";
-    ul2.className = "bottom-bg-news-ul-hide";
-    ul3.className = "bottom-bg-news-ul-show";
-    ul4.className = "bottom-bg-news-ul-hide";
-    ul5.className = "bottom-bg-news-ul-hide";
-}
-
-function hd_show() {
-    new1.className = "bottom-bg-news-nav-li-hide";
-    news.className = "bottom-bg-news-nav-li-hide";
-    gg.className = "bottom-bg-news-nav-li-hide";
-    hd.className = "bottom-bg-news-nav-li-show";
-    gl.className = "bottom-bg-news-nav-li-hide";
-    ul1.className = "bottom-bg-news-ul-hide";
-    ul2.className = "bottom-bg-news-ul-hide";
-    ul3.className = "bottom-bg-news-ul-hide";
-    ul4.className = "bottom-bg-news-ul-show";
-    ul5.className = "bottom-bg-news-ul-hide";
-}
-
-function gl_show() {
-    new1.className = "bottom-bg-news-nav-li-hide";
-    news.className = "bottom-bg-news-nav-li-hide";
-    gg.className = "bottom-bg-news-nav-li-hide";
-    hd.className = "bottom-bg-news-nav-li-hide";
-    gl.className = "bottom-bg-news-nav-li-show";
-    ul1.className = "bottom-bg-news-ul-hide";
-    ul2.className = "bottom-bg-news-ul-hide";
-    ul3.className = "bottom-bg-news-ul-hide";
-    ul4.className = "bottom-bg-news-ul-hide";
-    ul5.className = "bottom-bg-news-ul-show";
+    //宣传选项卡部分
+    for (var i = 0; i < newsClass.length; i++) {
+        newsClass[i].className = "bottom-bg-news-nav-li-hide"
+    }
+    this.className = "bottom-bg-news-nav-li-show";
+    serialNumber = this.getAttribute("num");
+    //宣传内容部分
+    for (var i = 0; i < ulList.length; i++) {
+        ulList[i].className = "bottom-bg-news-ul-hide";
+    }
+    ulList[parseInt(serialNumber)].className = "bottom-bg-news-ul-show";
 }
 //新闻列表切换结束
 
